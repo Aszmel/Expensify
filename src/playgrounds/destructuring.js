@@ -1,32 +1,32 @@
 // Object destructuring
 
-// const person = {
-//   name: "Arek",
-//   age: 44,
-//   location: {
-//     city: "Wloclawek",
-//     temp: 10
-//   }
-// };
+const person = {
+  name: "Arek",
+  age: 44,
+  location: {
+    city: "Wloclawek",
+    temp: 10
+  }
+};
 
-// const { name: firstName = "Anonymous", age } = person;
-// const { city: loc, temp: hot } = person.location;
+const { name: firstName = "Anonymous", age } = person;
+const { city: loc, temp: hot } = person.location;
 
-// console.log(
-//   `${firstName} is ${age} years old and live in ${loc} where temperature is ${hot}`
-// );
+console.log(
+  `${firstName} is ${age} years old and live in ${loc} where temperature is ${hot}`
+);
 
-// const book = {
-//   title: "Ego is the Enemy",
-//   author: "Ryan Holiday",
-//   publisher: {
-//     // name: "Penguin"
-//   }
-// };
+const book = {
+  title: "Ego is the Enemy",
+  author: "Ryan Holiday",
+  publisher: {
+    name: "Penguin"
+  }
+};
 
-// const { name: publisherName = "Self-Published" } = book.publisher;
+const { name: publisherName = "Self-Published" } = book.publisher;
 
-// console.log(publisherName);
+console.log(publisherName);
 
 // Array destructuring
 
