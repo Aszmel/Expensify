@@ -1,7 +1,6 @@
 import { createStore } from "redux";
 
 //Action generators - functions that returns action objects
-
 const incrementCount = ({ incrementBy = 1 } = {}) => ({
   type: "INCREMENT",
   incrementBy
@@ -24,7 +23,6 @@ const resetCount = () => ({
 //Reducers
 // 1. reducers are a pure functions
 // 2. never change state or action
-
 const countReducer = (state = { count: 0 }, action) => {
   switch (action.type) {
     case "INCREMENT":
@@ -48,6 +46,7 @@ const countReducer = (state = { count: 0 }, action) => {
   }
 };
 
+//below is creating store and use 3 actions (subscribe, dispatch, getstate)
 const store = createStore(countReducer);
 
 store.dispatch(incrementCount());
