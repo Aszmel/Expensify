@@ -6,7 +6,7 @@ const filtersReducersDefaultState = {
   endDate: undefined
 };
 
-export const filterReducer = (state = filtersReducersDefaultState, action) => {
+export default (state = filtersReducersDefaultState, action) => {
   switch (action.type) {
     case "SET_TEXT_FILTER":
       return {
