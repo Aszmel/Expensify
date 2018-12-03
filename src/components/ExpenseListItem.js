@@ -14,14 +14,4 @@ const ExpenseListItem = ({ dispatch, id, description, amount, createdAt }) => (
 
 export default connect()(ExpenseListItem);
 
-// const ExpenseListItem = ({ description, amount, createdAt }) => (
-//   <div>
-//     <h1>{description}</h1>
-//     <p>
-//       {amount}-{createdAt}
-//     </p>
-//     <button>Remove</button>
-//   </div>
-// );
 
-// export default ExpenseListItem;
