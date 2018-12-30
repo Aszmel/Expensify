@@ -3,14 +3,6 @@ import { connect } from "react-redux";
 import ExpenseForm from "./ExpenseForm";
 import { editExpense, removeExpense } from "../actions/expenses";
 
-//Refractor Edit to be class based component
-//Setup mapDispatchToProps 2 things editExpense removeExpense
-//get fixtures
-//3 tests
-//1 should render EditExpense => snapshot
-//2 should handle editExpense with spies
-//3 should handle removeExpense with spies
-
 export class EditExpense extends React.Component {
   onSubmit = expense => {
     this.props.editExpense(this.props.expense.id, expense);
