@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import ExpenseForm from "./ExpenseForm";
 import { editExpense, removeExpense } from "../actions/expenses";
 
+
 export class EditExpense extends React.Component {
   onSubmit = expense => {
     this.props.editExpense(this.props.expense.id, expense);
